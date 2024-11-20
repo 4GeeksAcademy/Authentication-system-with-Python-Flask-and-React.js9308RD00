@@ -1,3 +1,107 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+*{
+    margin: 0px ;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+* body {
+    background-color: white;
+    font-family: sans-serif;
+    
+    
+}
+
+.container{
+    
+    height: 420px;
+    max-width: 50%;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+
+.header {
+    
+    padding-bottom: 10px;
+    
+    color: tomato;
+    height: 30px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+}
+
+.main{
+    height: 1100px;
+    margin-top: 10px;
+    padding-bottom: 50px;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+
+
+}
+
+.main__text-1{
+    background-color: white;
+    
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+
+.main__text-2{
+    background-color: white;
+    
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    
+}
+
+.main__text-3{
+    background-color: white;
+    
+    
+}
+
+.main__image1 {
+    max-width: 100%;
+    
+    
+   
+
+}
+
+img {
+    max-width: 100%;
+    
+}
+
+.footer{
+    color:tomato;
+    font-size: 20px;
+    background-color: white;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
