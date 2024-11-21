@@ -20,6 +20,7 @@ const getState = ({ getStore, getActions, setStore }) => {
       token: null,
     },
     actions: {
+
       login: (email, password) => {
         fetch(
           "https://fantastic-space-guide-4p65x9rg4pvfjr7x-3001.app.github.dev//token",
@@ -37,7 +38,7 @@ const getState = ({ getStore, getActions, setStore }) => {
           .then((response) => response.json())
           .then((jsonifiedData) => {
             setStore({ token: jsonifiedData.token });
-            sessionStorage.setItem('token', jsonifiedData.token);
+            localStorage.setItem('token', jsonifiedData.token);
           })
           .catch((err) => console.log(err));
       },
@@ -69,6 +70,14 @@ const getState = ({ getStore, getActions, setStore }) => {
           })
           .catch((error) => console.error(error));
       },
+
+
+
+
+      logout: () => {
+        localStorage.removeItem("token"); // Clear the token from localStorage
+        setStore({ user: null, token: null }); // Clear user and token in the store
+    },
 
 
       // Use getActions to call a function within a fuction

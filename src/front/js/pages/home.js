@@ -15,15 +15,6 @@ export const Home = () => {
         </div>
         <div className="container">
             
-            
-
-            <div className="main">
-                <div className="main__image1"><img src="https://exoplanetes.umontreal.ca/wp-content/uploads/2022/11/Pillars_Feat.jpg"/>
-                    <div className="main__text-1">1/8</div>
-                    <div className="main__text-2">09/28/24</div>
-                    <div className="main__text-3">The Pillars of Creation in our universe..🤯🤔 </div>
-                </div>
-            </div>
             <div className="main">
                 <div className="main__image1"><img src="https://cdn.mos.cms.futurecdn.net/KNGZRXySsM7quLuNUa6C4h.jpg"/>
                     <div className="main__text-1">2/8</div>
